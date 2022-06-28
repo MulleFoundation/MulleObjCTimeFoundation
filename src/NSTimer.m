@@ -19,6 +19,8 @@
 #include <math.h>  // for INFINITY
 
 
+//#define NSTIMER_DEBUG   1
+
 @implementation NSTimer
 
 
@@ -99,12 +101,22 @@
 
 - (void) finalize
 {
+#ifdef NSTIMER_DEBUG
+   fprintf( stderr, "%s %s\n", [self UTF8String], __PRETTY_FUNCTION__);
+#endif
+
    [self invalidate];
 }
 
 
+// this is clobbered by -[NSTimer(NSRunLoop) invalidate]
+// if you change code here also change it there, it's crap but
+// want to stay compatible here
 - (void) invalidate
 {
+#ifdef NSTIMER_DEBUG
+   fprintf( stderr, "%s %s\n", [self UTF8String], __PRETTY_FUNCTION__);
+#endif
    [self->_o.target autorelease];
    self->_o.target = nil;
    [self->_userInfo autorelease];
@@ -112,6 +124,7 @@
    self->_selector = 0;
    self->_callback = NULL;
 }
+
 
 // finalize does all
 // - (void) dealloc
@@ -127,6 +140,9 @@
 {
    id   argument;
 
+#ifdef NSTIMER_DEBUG
+   fprintf( stderr, "%s %s\n", [self UTF8String], __PRETTY_FUNCTION__);
+#endif
    //
    // usually NSTimer passes self as argument and then you need to
    // get userInfo from it, but here you can set the flag
@@ -149,12 +165,10 @@
 }
 
 
-
 - (id) userInfo
 {
    return( _userInfo);
 }
-
 
 
 - (BOOL) mulleIsRelativeTimer
