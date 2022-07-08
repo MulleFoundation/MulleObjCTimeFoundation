@@ -14,31 +14,14 @@ recursive package management with cross-platform builds via **cmake**:
 Action  | Command                               | Description
 --------|---------------------------------------|---------------
 Build   | `mulle-sde craft [--release|--debug]` | Builds into local `kitchen` folder
-Add     | `mulle-sde dependency add --c --github <|GITHUB_USER|> MulleObjCTimeFoundation` | Add MulleObjCTimeFoundation to another mulle-sde project as a dependency
-Install | `mulle-sde install --prefix /usr/local https://github.com/<|GITHUB_USER|>/MulleObjCTimeFoundation.git` | Like `make install`
+Add     | `mulle-sde dependency add --c --github MulleFoundation MulleObjCTimeFoundation` | Add MulleObjCTimeFoundation to another mulle-sde project as a dependency
+Install | `mulle-sde install --prefix /usr/local https://github.com/MulleFoundation/MulleObjCTimeFoundation.git` | Like `make install`
 
 
-### Manual Installation
+## Install
 
-
-Install the requirements:
-
-Requirements                                      | Description
---------------------------------------------------|-----------------------
-[some-requirement](//github.com/some/requirement) | Some requirement
-
-Install into `/usr/local`:
-
-```
-mkdir build 2> /dev/null
-(
-   cd build ;
-   cmake -DCMAKE_INSTALL_PREFIX=/usr/local \
-         -DCMAKE_PREFIX_PATH=/usr/local \
-         -DCMAKE_BUILD_TYPE=Release .. ;
-   make install
-)
-```
+See [mulle-foundation-developer](//github.com/MulleFoundation/mulle-foundation-developer) for
+installation instructions.
 
 
 <!--
