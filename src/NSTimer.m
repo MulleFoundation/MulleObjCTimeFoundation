@@ -54,7 +54,7 @@
                                           userInfo:(id) userInfo
                         fireUsesUserInfoAsArgument:(BOOL) flag
 {
-   if( ! target || ! _selector)
+   if( ! target || ! sel)
    {
       [self release];
       return( nil);
