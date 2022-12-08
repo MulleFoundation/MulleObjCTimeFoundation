@@ -61,6 +61,7 @@ typedef void   NSTimerCallback_t( NSTimer *, id userInfo);
    char                _isRelative;
 }
 
+@property( readonly, retain) id   userInfo;
 
 
 //
@@ -71,6 +72,23 @@ typedef void   NSTimerCallback_t( NSTimer *, id userInfo);
 // mulleFireTimeInterval will be 0.0, but timeInterval will be set
 // relative NSTimer are not mutable
 //
++ (instancetype) mulleTimerWithRelativeTimeInterval:(mulle_relativetime_t) seconds
+                                     repeatInterval:(mulle_relativetime_t) repeatSeconds
+                                         invocation:(NSInvocation *) invocation;
+
++ (instancetype) mulleTimerWithRelativeTimeInterval:(mulle_relativetime_t) seconds
+                                     repeatInterval:(mulle_relativetime_t) repeatSeconds
+                                             target:(id) target
+                                           selector:(SEL) sel
+                                           userInfo:(id) userInfo
+                         fireUsesUserInfoAsArgument:(BOOL) flag;
+
++ (instancetype) mulleTimerWithRelativeTimeInterval:(mulle_relativetime_t) seconds
+                                     repeatInterval:(mulle_relativetime_t) repeatSeconds
+                                           callback:(NSTimerCallback_t) callback
+                                           userInfo:(id) userInfo;
+
+
 - (instancetype) mulleInitWithRelativeTimeInterval:(mulle_relativetime_t) seconds
                                     repeatInterval:(mulle_relativetime_t) repeatSeconds
                                        invocation:(NSInvocation *) invocation;
@@ -89,8 +107,6 @@ typedef void   NSTimerCallback_t( NSTimer *, id userInfo);
 
 - (BOOL) isValid;
 - (void) fire;
-
-- (id) userInfo;
 
 - (BOOL) mulleIsRelativeTimer;
 

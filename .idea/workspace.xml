@@ -1,8 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="MulleObjCTimeFoundation" targetName="MulleObjCTimeFoundation" />
+      <config projectName="MulleObjCTimeFoundation" targetName="_1_MulleObjCTimeFoundation" />
+      <config projectName="MulleObjCTimeFoundation" targetName="__objc_loader_inc__" />
+      <config projectName="MulleObjCTimeFoundation" targetName="_2_MulleObjCTimeFoundation" />
+      <config projectName="MulleObjCTimeFoundation" targetName="_3_MulleObjCTimeFoundation" />
+    </generated>
+  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
     </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="33f5e8d1-d6dd-40e4-a498-b0def9a208d1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/MulleObjCTimeFoundation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MulleObjCTimeFoundation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mulle/share/env/environment-plugin.sh" beforeDir="false" afterPath="$PROJECT_DIR$/.mulle/share/env/environment-plugin.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mulle/share/env/tool-extension" beforeDir="false" afterPath="$PROJECT_DIR$/.mulle/share/env/tool-extension" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mulle/share/sde/extension" beforeDir="false" afterPath="$PROJECT_DIR$/.mulle/share/sde/extension" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mulle/share/sourcetree/config" beforeDir="false" afterPath="$PROJECT_DIR$/.mulle/share/sourcetree/config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/share/AllLoadC.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/share/AllLoadC.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/share/CreateLoaderIncObjC.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/share/CreateLoaderIncObjC.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/share/Executable.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/share/Executable.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/share/ExecutableAux.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/share/ExecutableAux.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/share/ExecutableObjC.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/share/ExecutableObjC.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/share/Framework.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/share/Framework.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/share/Library.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/share/Library.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/share/PostStandaloneAuxC.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/share/PostStandaloneAuxC.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NSTimer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/NSTimer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NSTimer.m" beforeDir="false" afterPath="$PROJECT_DIR$/src/NSTimer.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reflect/_MulleObjCTimeFoundation-import.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/reflect/_MulleObjCTimeFoundation-import.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reflect/_MulleObjCTimeFoundation-include.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/reflect/_MulleObjCTimeFoundation-include.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/.mulle/share/env/environment-plugin.sh" beforeDir="false" afterPath="$PROJECT_DIR$/test/.mulle/share/env/environment-plugin.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/.mulle/share/sourcetree/config" beforeDir="false" afterPath="$PROJECT_DIR$/test/.mulle/share/sourcetree/config" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2GGZ2J7QRLKELHu8pTRxMqiZEk6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/home/src/srcO/MulleFoundation/MulleObjCTimeFoundation"
+  }
+}]]></component>
+  <component name="RunManager" selected="CMake Application._1_MulleObjCTimeFoundation">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MulleObjCTimeFoundation" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MulleObjCTimeFoundation" TARGET_NAME="MulleObjCTimeFoundation" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_1_MulleObjCTimeFoundation" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MulleObjCTimeFoundation" TARGET_NAME="_1_MulleObjCTimeFoundation" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_2_MulleObjCTimeFoundation" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MulleObjCTimeFoundation" TARGET_NAME="_2_MulleObjCTimeFoundation" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_3_MulleObjCTimeFoundation" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MulleObjCTimeFoundation" TARGET_NAME="_3_MulleObjCTimeFoundation" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="__objc_loader_inc__" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MulleObjCTimeFoundation" TARGET_NAME="__objc_loader_inc__" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application._1_MulleObjCTimeFoundation" />
+      <item itemvalue="CMake Application._2_MulleObjCTimeFoundation" />
+      <item itemvalue="CMake Application._3_MulleObjCTimeFoundation" />
+      <item itemvalue="CMake Application.__objc_loader_inc__" />
+      <item itemvalue="CMake Application.MulleObjCTimeFoundation" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="33f5e8d1-d6dd-40e4-a498-b0def9a208d1" name="Changes" comment="" />
+      <created>1666016672155</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666016672155</updated>
+      <workItem from="1666016673273" duration="21000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

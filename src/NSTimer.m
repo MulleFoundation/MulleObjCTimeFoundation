@@ -24,6 +24,43 @@
 @implementation NSTimer
 
 
++ (instancetype) mulleTimerWithRelativeTimeInterval:(mulle_relativetime_t) seconds
+                                     repeatInterval:(mulle_relativetime_t) repeatSeconds
+                                        invocation:(NSInvocation *) invocation
+{
+   return( [[[self alloc] mulleInitWithRelativeTimeInterval:seconds
+                                             repeatInterval:repeatSeconds
+                                                 invocation:invocation] autorelease]);
+}
+
+
++ (instancetype) mulleTimerWithRelativeTimeInterval:(mulle_relativetime_t) seconds
+                                     repeatInterval:(mulle_relativetime_t) repeatSeconds
+                                             target:(id) target
+                                           selector:(SEL) sel
+                                           userInfo:(id) userInfo
+                         fireUsesUserInfoAsArgument:(BOOL) flag
+{
+   return( [[[self alloc] mulleInitWithRelativeTimeInterval:seconds
+                                             repeatInterval:repeatSeconds
+                                                     target:target
+                                                   selector:sel
+                                                   userInfo:userInfo
+                                 fireUsesUserInfoAsArgument:flag] autorelease]);
+}
+
+
++ (instancetype) mulleTimerWithRelativeTimeInterval:(mulle_relativetime_t) seconds
+                                     repeatInterval:(mulle_relativetime_t) repeatSeconds
+                                           callback:(NSTimerCallback_t) callback
+                                           userInfo:(id) userInfo
+{
+   return( [[[self alloc] mulleInitWithRelativeTimeInterval:seconds
+                                             repeatInterval:repeatSeconds
+                                                   callback:callback
+                                                   userInfo:userInfo] autorelease]);
+}
+
 
 /*
  * Relative timers for use with MulleUI
@@ -90,6 +127,15 @@
    self->_isRelative        = YES;
 
    return( self);
+}
+
+
+- (void) dealloc
+{
+   [_userInfo release];
+   [self->_o.target  release];
+
+   [super dealloc];
 }
 
 

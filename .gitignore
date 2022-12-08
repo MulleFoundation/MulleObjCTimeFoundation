@@ -70,3 +70,5 @@ tmp.*/
 .swp$'\n'.mulle-make-build-dir
 version.old
 .mulle-make-build-dir
+cmake-build-*/
+.ackrc
