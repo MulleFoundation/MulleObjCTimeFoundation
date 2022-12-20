@@ -8,7 +8,7 @@
    "license" : "UNLICENSED",
    "repository" : {
       "type" : "git",
-      "url" : "MulleFoundation/MulleObjCTimeFoundation"
+      "url" : "github:MulleFoundation/MulleObjCTimeFoundation"
    },
    "dependencies" : {
       "MulleObjC" : "git://github.com/mulle-objc/MulleObjC",
