@@ -1,0 +1,31 @@
+{
+   project =
+   {
+      description="💰 MulleObjCTimeFoundation provides time classes";
+      domain="github";
+      name="MulleObjCTimeFoundation";
+      user="MulleFoundation";
+      repo="MulleObjCTimeFoundation";
+      homepage="https://github.com/MulleFoundation/MulleObjCTimeFoundation";
+      license="UNLICENSED"
+   };
+   dependencies =
+   (
+      {
+         description="💎 A collection of Objective-C root classes for mulle-objc";
+         domain="github";
+         name="MulleObjC";
+         repo="MulleObjC";
+         url="https://github.com/mulle-objc/MulleObjC";
+         user="mulle-objc";
+      },
+      {
+         description="📒 Lists mulle-objc runtime information contained in executables.";
+         domain="github";
+         name="mulle-objc-list";
+         repo="mulle-objc-list";
+         url="https://github.com/mulle-objc/mulle-objc-list";
+         user="mulle-objc";
+      }
+   )
+}

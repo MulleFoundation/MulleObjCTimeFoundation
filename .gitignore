@@ -72,3 +72,7 @@ version.old
 .mulle-make-build-dir
 cmake-build-*/
 .ackrc
+wilted/
+mulle-template-composer-*
+mulle-markdown-preview-*.html
+build-*

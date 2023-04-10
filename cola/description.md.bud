@@ -1,0 +1,2 @@
+Contains NSDate, NSTimeInterval, NSTimer and interfaces with
+[mulle-time](//github.com/mulle-core/mulle-time).

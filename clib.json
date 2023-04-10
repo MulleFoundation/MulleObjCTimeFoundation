@@ -1,0 +1,43 @@
+{
+   "name" : "MulleObjCTimeFoundation",
+   "version" : "0.1.0",
+   "description" : "MulleObjCTimeFoundation provides time classes",
+   "keywords" : [],
+   "license" : "UNLICENSED",
+   "repo" : "MulleFoundation/MulleObjCTimeFoundation",
+   "src" : [
+      "src/generic/import-private.h",
+      "src/generic/import.h",
+      "src/generic/include-private.h",
+      "src/generic/include.h",
+      "src/MulleObjCLoader+MulleObjCTimeFoundation.h",
+      "src/MulleObjCLoader+MulleObjCTimeFoundation.m",
+      "src/MulleObjCTimeFoundation.h",
+      "src/NSDate+NSCoder.h",
+      "src/NSDate+NSCoder.m",
+      "src/NSDate.h",
+      "src/NSDate.m",
+      "src/NSDateFactory.h",
+      "src/NSThread+NSDate.h",
+      "src/NSThread+NSDate.m",
+      "src/NSTimeInterval.h",
+      "src/NSTimer+NSDate.h",
+      "src/NSTimer+NSDate.m",
+      "src/NSTimer.h",
+      "src/NSTimer.m",
+      "src/reflect/objc-loader.inc",
+      "src/reflect/_MulleObjCTimeFoundation-export.h",
+      "src/reflect/_MulleObjCTimeFoundation-import-private.h",
+      "src/reflect/_MulleObjCTimeFoundation-import.h",
+      "src/reflect/_MulleObjCTimeFoundation-include-private.h",
+      "src/reflect/_MulleObjCTimeFoundation-include-public.h",
+      "src/reflect/_MulleObjCTimeFoundation-include.h",
+      "src/reflect/_MulleObjCTimeFoundation-provide.h",
+      "src/_MulleObjCDateSubclasses.h",
+      "src/_MulleObjCDateSubclasses.m"
+   ],
+   "dependencies" : {
+      "mulle-objc/MulleObjC": "*",
+      "mulle-objc/mulle-objc-list": "*"
+   }
+}
