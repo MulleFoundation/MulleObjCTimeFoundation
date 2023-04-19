@@ -1,6 +1,6 @@
 {
    "name" : "MulleObjCTimeFoundation",
-   "version" : "0.1.0",
+   "version" : "0.1.1",
    "description" : "MulleObjCTimeFoundation provides time classes",
    "keywords" : [],
    "license" : "UNLICENSED",
@@ -25,7 +25,6 @@
       "src/NSTimer+NSDate.m",
       "src/NSTimer.h",
       "src/NSTimer.m",
-      "src/reflect/objc-loader.inc",
       "src/reflect/_MulleObjCTimeFoundation-export.h",
       "src/reflect/_MulleObjCTimeFoundation-import-private.h",
       "src/reflect/_MulleObjCTimeFoundation-import.h",
