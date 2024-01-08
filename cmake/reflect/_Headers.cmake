@@ -65,5 +65,6 @@ src/NSTimeInterval.h
 src/NSTimer+NSDate.h
 src/NSTimer.h
 src/reflect/_MulleObjCTimeFoundation-include-public.h
+src/reflect/_MulleObjCTimeFoundation-versioncheck.h
 )
 

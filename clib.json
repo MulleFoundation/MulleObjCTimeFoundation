@@ -1,9 +1,9 @@
 {
    "name" : "MulleObjCTimeFoundation",
-   "version" : "0.1.1",
-   "description" : "MulleObjCTimeFoundation provides time classes",
+   "version" : "0.1.2",
+   "description" : "💰 MulleObjCTimeFoundation provides time classes",
    "keywords" : [],
-   "license" : "UNLICENSED",
+   "license" : "BSD-3-Clause",
    "repo" : "MulleFoundation/MulleObjCTimeFoundation",
    "src" : [
       "src/generic/import-private.h",
@@ -33,6 +33,7 @@
       "src/reflect/_MulleObjCTimeFoundation-include-public.h",
       "src/reflect/_MulleObjCTimeFoundation-include.h",
       "src/reflect/_MulleObjCTimeFoundation-provide.h",
+      "src/reflect/_MulleObjCTimeFoundation-versioncheck.h",
       "src/_MulleObjCDateSubclasses.h",
       "src/_MulleObjCDateSubclasses.m"
    ],

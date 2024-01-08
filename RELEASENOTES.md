@@ -1,3 +1,7 @@
+### 0.1.2
+
+* use instancetype in convenience constructors
+
 ### 0.1.1
 
 * Various small improvements
