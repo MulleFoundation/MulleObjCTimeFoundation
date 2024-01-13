@@ -3,7 +3,7 @@
    "version" : "0.1.2",
    "description" : "💰 MulleObjCTimeFoundation provides time classes",
    "keywords" : [],
-   "license" : "BSD-3-Clause",
+   "license" : "UNLICENSED",
    "repo" : "MulleFoundation/MulleObjCTimeFoundation",
    "src" : [
       "src/generic/import-private.h",

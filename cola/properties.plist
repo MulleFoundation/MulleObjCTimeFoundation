@@ -7,7 +7,7 @@
       user="MulleFoundation";
       repo="MulleObjCTimeFoundation";
       homepage="https://github.com/MulleFoundation/MulleObjCTimeFoundation";
-      license="BSD-3-Clause"
+      license="UNLICENSED";
    };
    dependencies =
    (
@@ -27,5 +27,5 @@
          url="https://github.com/mulle-objc/mulle-objc-list";
          user="mulle-objc";
       }
-   )
+   );
 }
