@@ -28,15 +28,31 @@ Contains NSDate, NSTimeInterval, NSTimer and interfaces with
 
 ## Add
 
+**This project is a component of the [MulleFoundation](//github.com/MulleFoundation/MulleFoundation) library.
+As such you usually will *not* add or install it individually, unless you
+specifically do not want to link against `MulleFoundation`.**
+
+
+### Add as an individual component
+
 Use [mulle-sde](//github.com/mulle-sde) to add MulleObjCTimeFoundation to your project:
 
 ``` sh
 mulle-sde add github:MulleFoundation/MulleObjCTimeFoundation
 ```
 
-## Install
+To only add the sources of MulleObjCTimeFoundation with dependency
+sources use [clib](https://github.com/clibs/clib):
 
-### Install with mulle-sde
+
+``` sh
+clib install --out src/MulleFoundation MulleFoundation/MulleObjCTimeFoundation
+```
+
+Add `-isystem src/MulleFoundation` to your `CFLAGS` and compile all the sources that were downloaded with your project.
+
+
+## Install
 
 Use [mulle-sde](//github.com/mulle-sde) to build and install MulleObjCTimeFoundation and all dependencies:
 
@@ -45,7 +61,7 @@ mulle-sde install --prefix /usr/local \
    https://github.com/MulleFoundation/MulleObjCTimeFoundation/archive/latest.tar.gz
 ```
 
-### Manual Installation
+### Legacy Installation
 
 Install the requirements:
 

@@ -57,9 +57,12 @@ set( PUBLIC_HEADERS
 src/_MulleObjCDateSubclasses.h
 src/MulleObjCLoader+MulleObjCTimeFoundation.h
 src/MulleObjCTimeFoundation.h
+src/NSConditionLock+NSDate.h
+src/NSCondition+NSDate.h
 src/NSDateFactory.h
 src/NSDate+NSCoder.h
 src/NSDate.h
+src/NSLock+NSDate.h
 src/NSThread+NSDate.h
 src/NSTimeInterval.h
 src/NSTimer+NSDate.h

@@ -12,8 +12,11 @@ endif()
 #
 set( SOURCES
 src/_MulleObjCDateSubclasses.m
+src/NSConditionLock+NSDate.m
+src/NSCondition+NSDate.m
 src/NSDate+NSCoder.m
 src/NSDate.m
+src/NSLock+NSDate.m
 src/NSThread+NSDate.m
 src/NSTimer+NSDate.m
 src/NSTimer.m
