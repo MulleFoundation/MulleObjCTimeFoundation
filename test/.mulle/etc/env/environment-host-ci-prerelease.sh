@@ -179,6 +179,24 @@ export MULLE_OBJC_TIME_FOUNDATION_BRANCH="prerelease"
 
 
 #
+# MulleObjCValueFoundation nodetype: ${MULLE_OBJC_VALUE_FOUNDATION_NODETYPE:-git}
+#
+export MULLE_OBJC_VALUE_FOUNDATION_NODETYPE="git"
+
+
+#
+# MulleObjCValueFoundation url: ${MULLE_OBJC_VALUE_FOUNDATION_URL:-https://github.com/MulleFoundation/MulleObjCValueFoundation.git}
+#
+export MULLE_OBJC_VALUE_FOUNDATION_URL="https://github.com/MulleFoundation/MulleObjCValueFoundation.git"
+
+
+#
+# MulleObjCValueFoundation branch: ${MULLE_OBJC_VALUE_FOUNDATION_BRANCH}
+#
+export MULLE_OBJC_VALUE_FOUNDATION_BRANCH="prerelease"
+
+
+#
 # mulle-testallocator nodetype: ${MULLE__TESTALLOCATOR_NODETYPE:-tar}
 #
 export MULLE__TESTALLOCATOR_NODETYPE="git"

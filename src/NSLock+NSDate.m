@@ -1,9 +1,9 @@
 //
-//  MulleObjCFoundation.h
+//  NSLock+NSDate.m
 //  MulleObjCValueFoundation
 //
-//  Copyright (c) 2016 Nat! - Mulle kybernetiK.
-//  Copyright (c) 2016 Codeon GmbH.
+//  Copyright (c) 2011 Nat! - Mulle kybernetiK.
+//  Copyright (c) 2011 Codeon GmbH.
 //  All rights reserved.
 //
 //
@@ -33,17 +33,24 @@
 //  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 //  POSSIBILITY OF SUCH DAMAGE.
 //
+#import "NSLock+NSDate.h"
+
+// other files in this library
+
+// other libraries of MulleObjCValueFoundation
+
+// std-c and dependencies
+#import "import-private.h"
+
+#import "NSDate.h"
 
 
-#define MULLE_OBJC_TIME_FOUNDATION_VERSION   ((0UL << 20) | (2 << 8) | 0)
+@implementation NSLock( NSDate)
 
 
-#import "_MulleObjCTimeFoundation-export.h"
-#include "_MulleObjCTimeFoundation-provide.h"
+- (BOOL) lockBeforeDate:(NSDate *) limit
+{
+   return( [self lockBeforeTimeInterval:[limit timeIntervalSinceReferenceDate]]);
+}
 
-#ifdef __has_include
-# if __has_include( "_MulleObjCTimeFoundation-versioncheck.h")
-#  include "_MulleObjCTimeFoundation-versioncheck.h"
-# endif
-#endif
-
+@end

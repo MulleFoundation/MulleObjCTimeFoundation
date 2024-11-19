@@ -1,9 +1,9 @@
 //
-//  MulleObjCFoundation.h
-//  MulleObjCValueFoundation
+//  NSCondition+NSDate.m
+//  MulleObjCLockFoundation
 //
-//  Copyright (c) 2016 Nat! - Mulle kybernetiK.
-//  Copyright (c) 2016 Codeon GmbH.
+//  Copyright (c) 2021 Nat! - Mulle kybernetiK.
+//  Copyright (c) 2021 Codeon GmbH.
 //  All rights reserved.
 //
 //
@@ -33,17 +33,27 @@
 //  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 //  POSSIBILITY OF SUCH DAMAGE.
 //
+// prefer a local NSCondition over one in import.h
+
+// we want "import.h" always anyway
+#import "import.h"
+
+#import "NSTimeInterval.h"
+
+@class NSDate;
 
 
-#define MULLE_OBJC_TIME_FOUNDATION_VERSION   ((0UL << 20) | (2 << 8) | 0)
+@interface NSCondition( NSDate)
 
+- (BOOL) waitUntilDate:(NSDate *) limit;
 
-#import "_MulleObjCTimeFoundation-export.h"
-#include "_MulleObjCTimeFoundation-provide.h"
+//
+// this is a BOOL: if you get NO, you know that limit has been reached
+// Enter here in a locked state, unlock afterwards.
+// TimeInterval as calendar date
+- (BOOL) mulleWaitUntilTimeInterval:(NSTimeInterval) timeInterval;
 
-#ifdef __has_include
-# if __has_include( "_MulleObjCTimeFoundation-versioncheck.h")
-#  include "_MulleObjCTimeFoundation-versioncheck.h"
-# endif
-#endif
+// timeout (will still use mulleWaitUntilTimeInterval) because of pthreads
+- (BOOL) mulleWaitWithTimeout:(mulle_relativetime_t) seconds;
 
+@end
