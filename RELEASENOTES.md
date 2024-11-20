@@ -1,3 +1,8 @@
+## 0.2.0
+
+* gain some files from other projects, since locking is now part of MulleObjC
+
+
 ### 0.1.2
 
 * use instancetype in convenience constructors
