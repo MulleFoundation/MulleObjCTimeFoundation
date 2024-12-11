@@ -1,3 +1,7 @@
+### 0.2.1
+
+Various small improvements
+
 ## 0.2.0
 
 * gain some files from other projects, since locking is now part of MulleObjC

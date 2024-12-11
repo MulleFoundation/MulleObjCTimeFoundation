@@ -8,7 +8,7 @@ Contains NSDate, NSTimeInterval, NSTimer and interfaces with
 
 | Release Version                                       | Release Notes
 |-------------------------------------------------------|--------------
-| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/MulleObjCTimeFoundation.svg?branch=release) [![Build Status](https://github.com/MulleFoundation/MulleObjCTimeFoundation/workflows/CI/badge.svg?branch=release)](//github.com/MulleFoundation/MulleObjCTimeFoundation/actions) | [RELEASENOTES](RELEASENOTES.md) |
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/MulleObjCTimeFoundation.svg) [![Build Status](https://github.com/MulleFoundation/MulleObjCTimeFoundation/workflows/CI/badge.svg)](//github.com/MulleFoundation/MulleObjCTimeFoundation/actions) | [RELEASENOTES](RELEASENOTES.md) |
 
 
 
