@@ -6,9 +6,9 @@ Contains NSDate, NSTimeInterval, NSTimer and interfaces with
 [mulle-time](//github.com/mulle-core/mulle-time).
 
 
-| Release Version                                       | Release Notes
-|-------------------------------------------------------|--------------
-| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/MulleObjCTimeFoundation.svg) [![Build Status](https://github.com/MulleFoundation/MulleObjCTimeFoundation/workflows/CI/badge.svg)](//github.com/MulleFoundation/MulleObjCTimeFoundation/actions) | [RELEASENOTES](RELEASENOTES.md) |
+| Release Version                                       | Release Notes  | AI Documentation
+|-------------------------------------------------------|----------------|---------------
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/MulleObjCTimeFoundation.svg) [![Build Status](https://github.com/MulleFoundation/MulleObjCTimeFoundation/workflows/CI/badge.svg)](//github.com/MulleFoundation/MulleObjCTimeFoundation/actions) | [RELEASENOTES](RELEASENOTES.md) | [DeepWiki for MulleObjCTimeFoundation](https://deepwiki.com/MulleFoundation/MulleObjCTimeFoundation)
 
 
 
