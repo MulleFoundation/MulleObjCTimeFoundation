@@ -1,3 +1,8 @@
+### 0.2.2
+
+
+* NSDate gains -copy from MulleObjCImmutable
+
 ### 0.2.1
 
 Various small improvements
