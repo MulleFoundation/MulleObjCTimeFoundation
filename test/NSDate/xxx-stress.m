@@ -35,7 +35,7 @@ static int   forever;
    {
       [self lockWhenCondition:value];
       if( ! forever)
-         printf( "%d #%d: %ld\n",
+         mulle_printf( "%d #%d: %ld\n",
                   threadno,
                   i,
                   (long) [self condition]);
@@ -65,7 +65,7 @@ int   main( int argc, const char * argv[])
    do
    {
       if( ! forever)
-         printf( "0. %ld\n", [lock condition]);
+         mulle_printf( "0. %ld\n", [lock condition]);
 
       for( i = 1; i <= N_THREADS; i++)
          [NSThread detachNewThreadSelector:@selector( runThread:)
@@ -80,7 +80,7 @@ int   main( int argc, const char * argv[])
       [lock unlockWithCondition:0];
 
       if( forever)
-         fprintf( stderr, ".");
+         mulle_fprintf( stderr, ".");
    }
    while( forever);
 

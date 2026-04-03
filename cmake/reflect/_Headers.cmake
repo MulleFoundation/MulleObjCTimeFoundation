@@ -55,7 +55,7 @@ src/generic/include.h
 #
 set( PUBLIC_HEADERS
 src/_MulleObjCDateSubclasses.h
-src/MulleObjCLoader+MulleObjCTimeFoundation.h
+src/MulleObjCDeps+MulleObjCTimeFoundation.h
 src/MulleObjCTimeFoundation.h
 src/NSConditionLock+NSDate.h
 src/NSCondition+NSDate.h

@@ -17,7 +17,7 @@
 static void   print_fail_if( int state)
 {
    if( state)
-      printf( "FAIL\n");
+      mulle_printf( "FAIL\n");
 }
 
 
@@ -41,14 +41,14 @@ int   main( int argc, const char * argv[])
    if( [lock mulleLockWhenCondition:1849
                             timeout:0.75])
    {
-      fprintf( stderr, "succeeded with wrong condition\n");
+      mulle_fprintf( stderr, "succeeded with wrong condition\n");
       return( 1);
    }
 
    after = _NSTimeIntervalNow();
    if( before + 0.75 > after)
    {
-      fprintf( stderr, "timeout 1 too early (%.5f, %.5f)\n", before + 0.75, after);
+      mulle_fprintf( stderr, "timeout 1 too early (%.5f, %.5f)\n", before + 0.75, after);
       return( 1);
    }
 
@@ -56,14 +56,15 @@ int   main( int argc, const char * argv[])
    if( [lock mulleLockWhenCondition:1849
                  beforeTimeInterval:before + 0.75])
    {
-      fprintf( stderr, "succeeded with wrong condition\n");
+      mulle_fprintf( stderr, "succeeded with wrong condition\n");
       return( 1);
    }
 
    after = _NSTimeIntervalNow();
-   if( before + 0.75 > after)
+   // Allow 10ms tolerance for calendar time methods (platform dependent)
+   if( before + 0.75 - 0.01 > after)
    {
-      fprintf( stderr, "timeout 2 too early (%.5f, %.5f)\n", before + 0.75, after);
+      mulle_fprintf( stderr, "timeout 2 too early (%.5f, %.5f)\n", before + 0.75, after);
       return( 1);
    }
 

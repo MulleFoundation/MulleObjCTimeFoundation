@@ -1,0 +1,17 @@
+isEqualToDate: equal: YES
+isEqualToDate: different: NO
+isEqualToDate:nil: NO
+isEqual: equal: YES
+isEqual: non-date: NO
+hash: equal dates have equal hashes
+dateByAddingTimeInterval:50 from 100 -> 150.0
+timeIntervalSinceDate: 200 - 100 = 100.0
+earlierDate: returns earlier
+earlierDate: reversed args: returns earlier
+earlierDate:nil -> self
+earlierDate: equal dates -> self
+laterDate: returns later
+laterDate: reversed args: returns later
+laterDate:nil -> self
+laterDate: equal dates -> self
+negative interval date: -50.0

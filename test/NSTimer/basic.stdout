@@ -1,0 +1,26 @@
+nil target -> nil timer
+nil selector -> nil timer
+nil callback -> nil timer
+nil invocation -> nil timer
+selector timer created
+isValid before fire: YES
+fire called selector: OK
+non-repeat timer invalid after fire: OK
+fired arg is timer (passUserInfo=NO): OK
+fired arg is userInfo (passUserInfo=YES): OK
+repeat timer valid after fire: OK
+repeat timer fires multiple times: OK
+invalidate -> isValid: NO
+callback timer created
+callback called on fire: OK
+callback userInfo: OK
+non-repeat callback timer invalid after fire: OK
+userInfo accessor: OK
+mulleRepeatTimeInterval: 3.0
+mulleIsRelativeTimer: YES
+mulleRelativeTimeInterval: 2.0
+mulleTarget: OK
+mulleSelector: OK
+mulleFiresWithUserInfoAsArgument: NO
+zero interval clamped to _NSTIMER_MIN_TIMEINTERVAL: OK
+negative repeatInterval clamped to 0.0: OK

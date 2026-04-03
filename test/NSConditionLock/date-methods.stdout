@@ -1,0 +1,10 @@
+lockWhenCondition:7 beforeDate:+0.5 -> YES
+lockWhenCondition:99 beforeDate:past -> NO (timeout)
+lock free after lockWhenCondition:beforeDate: timeout
+lockBeforeDate:+0.5 -> YES
+mulleLockWhenCondition:7 waitUntilTimeInterval:+0.5 -> YES
+mulleLockWhenCondition:99 waitUntilTimeInterval:past -> NO
+lock free after mulleLockWhenCondition:waitUntilTimeInterval: timeout
+mulleLockWhenCondition:7 waitUntilDate:+0.5 -> YES
+mulleLockWithTimeout:0.5 -> YES
+mulleLockBeforeTimeInterval:+0.5 -> YES

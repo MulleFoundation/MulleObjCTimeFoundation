@@ -18,31 +18,31 @@ static void    test( NSDate *a, NSDate *b)
    NSTimeInterval   c_i;
    NSDate           *c;
 
-   printf( "   ");
+   mulle_printf( "   ");
    {
       if( a)
-         printf( "a=%.1f", [a timeIntervalSinceReferenceDate]);
+         mulle_printf( "a=%.1f", [a timeIntervalSinceReferenceDate]);
       else
-         printf( "a=*nil*");
+         mulle_printf( "a=*nil*");
 
-      printf( " laterDate: ");
+      mulle_printf( " laterDate: ");
 
       if( b)
-         printf( "b=%.1f", [b timeIntervalSinceReferenceDate]);
+         mulle_printf( "b=%.1f", [b timeIntervalSinceReferenceDate]);
       else
-         printf( "b=*nil*");
+         mulle_printf( "b=*nil*");
 
-      printf( " = ");
+      mulle_printf( " = ");
       c = [a laterDate:b];
       if( c == a)
-         printf( "a");
+         mulle_printf( "a");
       else
          if( c == b)
-            printf( "b");
+            mulle_printf( "b");
          else
-            printf( "???");
+            mulle_printf( "???");
    }
-   printf( "\n");
+   mulle_printf( "\n");
 }
 
 
@@ -56,25 +56,25 @@ int   main( void)
    value2 = [[[NSDate alloc] initWithTimeIntervalSinceReferenceDate:0] autorelease];
    value3 = [[[NSDate alloc] initWithTimeIntervalSinceReferenceDate:1.5] autorelease];
 
-   printf( "nil\n");
+   mulle_printf( "nil\n");
    test( nil, nil);
    test( nil, value1);
    test( nil, value2);
    test( nil, value3);
 
-   printf( "1\n");
+   mulle_printf( "1\n");
    test( value1, nil);
    test( value1, value1);
    test( value1, value2);
    test( value1, value3);
 
-   printf( "2\n");
+   mulle_printf( "2\n");
    test( value2, nil);
    test( value2, value1);
    test( value2, value2);
    test( value2, value3);
 
-   printf( "3\n");
+   mulle_printf( "3\n");
    test( value3, nil);
    test( value3, value1);
    test( value3, value2);

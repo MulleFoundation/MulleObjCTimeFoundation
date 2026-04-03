@@ -1,0 +1,2 @@
+worker timed out: OK
+main acquired lock after worker timeout: OK

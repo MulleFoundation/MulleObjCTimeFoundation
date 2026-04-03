@@ -1,0 +1,18 @@
+timerWithTimeInterval:invocation:nil -> nil
+timerWithTimeInterval:target:nil -> nil
+timerWithTimeInterval:selector:0 -> nil
+timerWithTimeInterval:target:selector: created
+fireDate != nil: OK
+mulleFireTimeInterval > 0: OK
+non-repeat timeInterval: 0.0
+fire -> selector called
+repeat timeInterval: 2.0
+zero interval calendar timer created: OK
+initWithFireDate:interval:target:selector: created
+fireDate matches initWithFireDate: OK
+initWithFireDate: timeInterval: 0.5
+initWithFireDate:repeats:NO -> timeInterval: 0.0
+timerWithTimeInterval:invocation: created
+invocation timer fireDate != nil: OK
+invocation timer fire called target: OK
+repeating invocation timer timeInterval: 2.0

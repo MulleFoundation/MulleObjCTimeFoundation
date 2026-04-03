@@ -1,4 +1,5 @@
 # MulleObjCTimeFoundation Library Documentation for AI
+<!-- Keywords: time, date -->
 
 ## 1. Introduction & Purpose
 

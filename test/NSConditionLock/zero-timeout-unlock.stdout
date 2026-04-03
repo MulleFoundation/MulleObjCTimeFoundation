@@ -1,0 +1,2 @@
+mulleLockWhenCondition:2 timeout:0.0 returned NO: OK
+lock is free after zero-timeout miss: OK
