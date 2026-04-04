@@ -8,6 +8,7 @@
       repo="MulleObjCTimeFoundation";
       homepage="https://github.com/MulleFoundation/MulleObjCTimeFoundation";
       license="UNLICENSED";
+      version = "0.2.4";
    };
    dependencies =
    (
