@@ -1,38 +1,15 @@
-### 0.2.3
-
-Various small improvements
-
-### 0.2.2
+### 0.2.4
 
 
-* NSDate gains -copy from MulleObjCImmutable
-
-### 0.2.1
-
-Various small improvements
-
-## 0.2.0
-
-* gain some files from other projects, since locking is now part of MulleObjC
 
 
-### 0.1.2
-
-* use instancetype in convenience constructors
-
-### 0.1.1
-
-* Various small improvements
-
-## 0.1.0
-
-* add a bunch of convenience constructors
 
 
-### 0.0.3
 
-* fix bug where wrong variable was tested in mulleInitWithRelativeTimeInterval:repeat...
 
-### 0.0.1
 
-* initial commit
+
+* NSDate initWithTimeInterval:sinceDate now computes offsets correctly (fixes wrong-sign bug when creating dates relative to another date)
+* NSCondition and NSConditionLock use platform thread helpers and absolute/monotonic-time retry logic to avoid premature timeouts and ensure proper unlocking
+* NSLock lockBeforeDate now interprets deadlines consistently via timeIntervalSince1970
+* Rename loader dependency symbols (MulleObjCLoader → MulleObjCDeps) and generated files to reflect dependency API

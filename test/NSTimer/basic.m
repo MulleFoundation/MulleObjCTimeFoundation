@@ -4,6 +4,10 @@
 # import <Foundation/Foundation.h>
 #endif
 
+@interface NSTimer (Forward)
+- (void) invalidate;
+@end
+
 //
 // Tests for NSTimer: construction, fire, isValid, invalidate,
 // nil guards, userInfo, and accessor methods.

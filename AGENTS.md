@@ -19,7 +19,10 @@ mulle-sde howto cat dependency
 mulle-sde howto cat testing
 ```
 
-The provided information is CRITICAL to your success.
+The provided information is CRITICAL to your success. Study the available
+howtos list and use them, when the case arises.
+
+
 
 ## TRANSGRESSIONS PUNISHABLE BY DEATH
 
@@ -31,6 +34,17 @@ will take your place.
 
 DO NOT attempt to fix build system problems with *anything* else then standard
 mulle-sde commands. If you feel stuck, ask the user for help.
+
+DO NOT circumvent vibecoding. If you think you need to do this, you are
+already in a death spiral of confusion. Escalate to the user for help.
+
+DO NOT try to hack environment variables like this:
+
+``` bash
+VARIABLE=foo mulle-sde command ...
+```
+it just doesn't work. Its another death spiral of confusion indicator.
+Instead escalate to the user for help.
 
 
 ## MANDATORY BEFORE WRITING ANY PROJECT CODE
@@ -45,11 +59,37 @@ mulle-sde howto show --keyword styleguide --keyword "${value}"
 
 This gets the style information for the project. It is NOT optional.
 
+## MANDATORY BEFORE BUILDING ANY CODE
+
+🚨 **YOU MUST HAVE RUN THIS COMMAND BEFORE EXECUTIN MULLE-SDE CRAFT OR TEST COMMANDS** 🚨
+
+``` bash
+mulle-sde log help
+```
+
+Use the builtin log facility. Do not rerun `mulle-sde craft` just to grep a
+different diagnostic. Use `grep -B n -A m` on `mulle-sde log` output to grep
+for patterns with surrounding context.
+
+🚨 **YOU MUST RUN THIS COMMAND WHEN WORKING WITH MULTIPLE PROJECTS** 🚨
+
+```bash
+mulle-sde howto show multi-project"
+```
+
+It is NOT optional.
+
 And get familiar with the available API. You MUST always use custom API
 in favor of standard API, when available:
 
 ``` bash
 mulle-sde api list
+```
+
+When you are writing code, you have great search tools at your disposal:
+
+``` bash
+mulle-sde code help
 ```
 
 ## MANDATORY BEFORE CHANGING ANY MULLE-SDE SHELL CODE
@@ -61,6 +101,8 @@ mulle-bashfunctions toc
 ```
 
 This gets you the coding information for the shell/bash project. It is NOT optional.
+
+
 ## Library
 
 This is a library project, you can not run it.

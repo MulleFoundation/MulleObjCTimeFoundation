@@ -4,6 +4,10 @@
 # import <Foundation/Foundation.h>
 #endif
 
+@interface NSDate (Forward)
+- (BOOL) isEqualToDate:(NSDate *) other;
+@end
+
 //
 // Tests for NSDate equality, hash, dateByAddingTimeInterval,
 // earlierDate, laterDate.
